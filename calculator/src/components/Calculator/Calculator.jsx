@@ -5,3 +5,13 @@ import NumberButton from "../NumberButton/NumberButton";
 import "../../Style/calculator.css";
 
 const Calculator = () => {
+  const [val, setVal] = useState("");
+
+  const handleInputChange = (value) => {
+    setVal(value);
+  };
+
+  const handleButtonClick = (value) => {
+    setVal(val + value);
+  };
+
