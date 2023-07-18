@@ -15,3 +15,19 @@ const Calculator = () => {
     setVal(val + value);
   };
 
+  const handleBackspace = () => {
+    try {
+      setVal(val.slice(0, -1));
+    } catch (error) {
+      setVal("");
+    }
+  };
+
+  const handleCalculate = () => {
+    try {
+      setVal(eval(val));
+    } catch (error) {
+      setVal("Error");
+    }
+  };
+
