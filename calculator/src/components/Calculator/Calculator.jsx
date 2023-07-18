@@ -32,6 +32,13 @@ const Calculator = () => {
     }
   };
 
+  const handleMemoryClear = () => {
+    setMemory(0);
+  };
+  
+  const handleMemoryRecall = () => {
+    setVal(memory.toString());
+  };
   return (
     <div className="calculator">
       <div>
