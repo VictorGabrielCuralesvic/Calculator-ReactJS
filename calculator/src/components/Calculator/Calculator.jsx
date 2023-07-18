@@ -39,6 +39,17 @@ const Calculator = () => {
   const handleMemoryRecall = () => {
     setVal(memory.toString());
   };
+  
+  const handleMemoryAdd = () => {
+    const num = parseFloat(val);
+    setMemory(memory + num);
+  };
+  
+  const handleMemorySubtract = () => {
+    const num = parseFloat(val);
+    setMemory(memory - num);
+  };
+
   return (
     <div className="calculator">
       <div>
